@@ -5,6 +5,7 @@ class NewsContainer extends StatelessWidget {
   String newsHead;
   String newsDes;
   String newsUrl;
+  String newsContent;
 
   NewsContainer({
     super.key,
@@ -13,6 +14,7 @@ class NewsContainer extends StatelessWidget {
     required this.newsHead,
     required this.newsDes,
     required this.newsUrl,
+    required this.newsContent,
   });
 
   @override
@@ -43,6 +45,15 @@ class NewsContainer extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
+                Text(
+                  newsContent,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black38,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 10),
                 SizedBox(height: 10),
                 Text(newsDes, style: TextStyle(fontSize: 16)),
                 SizedBox(height: 10),
